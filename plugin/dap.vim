@@ -8,9 +8,9 @@ nnoremap <silent> <leader><F9> :lua require'dap'.set_breakpoint(vim.fn.input('Br
 nnoremap <silent> <leader><F8> :lua require'dap'.set_breakpoint(nil, nil, vim.fn.input('Log point message: '))<CR>
 nnoremap <silent> <leader><F7> :lua require'dap'.repl.open()<CR>
 nnoremap <silent> <leader><F6> :lua require'dap'.run_last()<CR>
-nnoremap <silent> <leader>dn :lua require('dap-python').test_method()<CR>
-nnoremap <silent> <leader>df :lua require('dap-python').test_class()<CR>
-vnoremap <silent> <leader>ds <ESC>:lua require('dap-python').debug_selection()<CR>
+nnoremap <silent> <leader>pdn :lua require('dap-python').test_method()<CR>
+nnoremap <silent> <leader>pdf :lua require('dap-python').test_class()<CR>
+vnoremap <silent> <leader>pds <ESC>:lua require('dap-python').debug_selection()<CR>
 
 nnoremap <silent> <leader>jdf :lua require('jdtls').test_class()<CR>
 nnoremap <silent> <leader>jdn :lua require('jdtls').test_nearest_method()<CR>
